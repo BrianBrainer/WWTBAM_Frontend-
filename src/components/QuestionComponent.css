@@ -1,0 +1,38 @@
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .answer {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .answer:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .answer.correct {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  .answer.incorrect {
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  
