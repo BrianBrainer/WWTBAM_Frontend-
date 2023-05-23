@@ -2,36 +2,70 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
+    grid-column: 1 / span 2; 
+    background-color: black;
+    color: white;
+    border: 2px solid white;
   }
   
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    margin: 0 auto; /* Add margin to center the grid within its parent container */
+    max-width: 400px; 
+    border-color: white;
+  }
+
   .answers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
   
   .answer {
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  border-color: red;
+  border-width: 100px;
+  background-color: lightgray;
+  color: white;
+  width: 150px;
+  height: 150px;
   }
   
-  .answer:hover {
+  /* .answer:hover {
     background-color: #e0e0e0;
+  } */
+
+.answer-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  width: 500px;
+  height: 50px;
+}
+
+  .answer-option:hover {
+    background-color: #e79b32;
   }
   
-  .answer.correct {
-    background-color: #4caf50;
+  .answer-option.selected.correct {
+    background-color: #0eb265;
     color: #ffffff;
   }
   
-  .answer.incorrect {
+  .answer-option.selected.incorrect {
     background-color: #f44336;
     color: #ffffff;
   }

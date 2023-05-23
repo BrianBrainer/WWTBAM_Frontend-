@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100px; /* Set the height of the container to full viewport height */
+  }
+
+button {
+    border-radius: 50%;
+    padding: 10px 20px;
+    border-color: #06adf1;
+    border-width: 7px;
+    background-color: black;
+    color: white;
+    width: 125px;
+    height: 75px;
+    margin: 1%;
+    align-items: center;
+  }
